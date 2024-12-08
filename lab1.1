@@ -1,0 +1,28 @@
+#include <iostream> 
+#include <math.h>  
+ 
+using namespace std;   
+ 
+int main()   
+{ 
+ setlocale(LC_ALL, "rus");    
+ 
+ double r1, a, r2;  
+ double Pi; 
+ 
+ Pi = 3,14; 
+ //a = 10; 
+  
+ cout << "расчитаем r1" << endl; 
+ cin >> a; 
+   
+ r1 = pow(2 * sin(3 * Pi - 2 * a), 2) * pow(cos(5 * Pi + 2 * a),2); 
+ //cout << "рассчитаем r2"<< endl; 
+   r2 = - sin(5/2 * Pi - 8 * a)/4+1/4;  
+        
+   cout << "результат r1 = " << fixed  << r1 << endl;  
+   cout << "результат r2 = " << fixed  << r2 << endl; 
+   
+  
+ return 0; 
+}
